@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post">
+      <div>
+       <label form="teste">Nome</label>
+        <input type="test" id="nome" name="nome" />
+      </div>
+      <div>
+        <label form="cidade"> Cidade:</label>
+        <input type="text" id="cidade" name="cidade"disabled/>
+      </div>
+      <div>
+        <label form="país"> Pais:</label>
+        <input type="text" id="pais" name="pais" />
+      </div>
+      <div>
+        <label form="e-mail">E-mail:</label>
+        <input type="email" id="email" name="email"/>
+      </div>
+      <div>
+        <label form="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" />
+      </div>
+      <fieldset>
+        <legend>Fruta</legend>
+        <input type="radio" name="fruta" id="um" value="Abacaxi">
+        <label for="um">Abacaxi</label>
+        <input type="radio" name="fruta" id="dois" value="Banana" checked>
+        <label for="dois">Banana</label>
+        <input type="radio" name="fruta" id="tres" value="Mamão">
+        <label for="tres">Mamão</label>
+        <input type="radio" name="fruta" id="quatro" value="Melão">
+        <label for="quatro">Melão</label>
+        <input type="checkbox">
+        <label form="cinco">Morango</label>
+     </fieldset>
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
