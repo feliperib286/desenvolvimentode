@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <form method="post">
+        
+      <div>
+       <label form="teste">Nome</label>
+        <input type="test" id="nome" name="nome" />
+      </div>
+      <div>
+        <label form="cidade"> Cidade:</label>
+        <input type="text" id="cidade" name="cidade"disabled/>
+      </div>
+      <div>
+        <label form="país"> Pais:</label>
+        <input type="text" id="pais" name="pais" />
+      </div>
+      <div>
+        <label form="e-mail">E-mail:</label>
+        <input type="email" id="email" name="email"/>
+      </div>
+      <div class="password-container">
+        <label for="Senha">Senha</label>
+        <input type="password" id="password">
+        <i class="fas fa-eye" id="togglePassword"></i>
+    </div>
+      <fieldset>
+        <legend>Fruta</legend>
+        <input type="radio" name="fruta" id="um" value="Abacaxi">
+        <label for="um">Abacaxi</label>
+        <input type="radio" name="fruta" id="dois" value="Banana" checked>
+        <label for="dois">Banana</label>
+        <input type="radio" name="fruta" id="tres" value="Mamão">
+        <label for="tres">Mamão</label>
+        <input type="radio" name="fruta" id="quatro" value="Melão">
+        <label for="quatro">Melão</label>
+        <input type="checkbox">
+        <label form="cinco">Morango</label>
+     </fieldset>
+     <fieldset>
+        <legend>Vergura</legend>
+        <input type="radio" name="verdura" id="um" value="couve">
+        <label for="um">couve</label>
+        <input type="radio" name="verdura" id="dois" value="alface">
+        <label for="um">couve</label> 
+        </fieldset>
+        <fieldset>
+            <legend>Pratos Principais</legend>
+            <input type="checkbox" name="Pratos" id= "um" value="Lasanha">
+            <label for="um">Lasanha</label>
+            <br>
+            <input type="checkbox" name="Pratos" id="dois" value="Macarrão">
+            <label for="um">Macarrão</label> 
+            <br>
+            </fieldset>
+      <button>Enviar</button>
+        <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const password = document.getElementById('password');
+
+        togglePassword.addEventListener('click', () => {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            togglePassword.classList.toggle('fa-eye');
+            togglePassword.classList.toggle('fa-eye-slash');
+        });
+    </script>
+    </form>
+  </body>
+</html>
