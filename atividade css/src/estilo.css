@@ -1,0 +1,26 @@
+p {
+    color: blue;
+    background-color: lightgray;
+  }
+  div {
+    border: 3px solid red;
+    font-weight: bold;
+  }
+
+#teste {
+     font-family:'Times New Roman', sans-serif; font-size: 20px;
+    color: darkblue;
+    font-style:italic;
+    border: 3px solid rgb(183, 135, 222);
+}  
+.amanha:hover{
+    color:blue;
+    font-weight:100;
+    background-color: green;
+
+} 
+.amanha{
+    color:rgb(48, 87, 49);
+    font-weight:100;
+    background-color: red;
+}
